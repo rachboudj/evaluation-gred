@@ -58,6 +58,7 @@ header .menu-burger .burger-button {
     z-index: 9;
     padding: 15px;
     cursor: pointer;
+    margin-right: 10em;
 }
 
 header .menu-burger .burger-button span {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <title>Exercice DOM</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- 1) Créez une page web avec plusieurs paragraphes de texte. Ajoutez des boutons qui changent la couleur de tous les paragraphes en rouge, vert ou bleu. -->
+    <h2>Paragraphe qui change de couleur</h2>
     <p class="paragraphe">Paragraphe 1</p>
     <p class="paragraphe">Paragraphe 2</p>
     <p class="paragraphe">Paragraphe 3</p>
@@ -19,59 +22,70 @@
 
 
     <!-- 3) Utilisez JavaScript pour créer un bouton qui, lorsqu'on clique dessus, crée un nouvel élément div avec un texte à l'intérieur et l'ajoute à la fin du body. -->
+    <h2>Bouton avec texte qui apparaît</h2>
     <button onclick="ajouterTexte()">Cliquez ici pour recevoir un message sympa</button>
 
     <!-- 6) Créez un carrousel d'images. Les utilisateurs doivent pouvoir cliquer sur des boutons "précédent" et "suivant" pour faire défiler les images. -->
-            <div class="mySlides">
-                <img class="img-slider" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Logo PHP">
-            </div>
-            <div class="mySlides">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/logo-javascript-logo-png-transparent.png" alt="Logo de javascript">
-            </div>
-            <div class="mySlides">
-                <img class="img-slider" src="https://cdn.cdnlogo.com/logos/c/27/c.svg" alt="Logo de C Sharp">
-            </div>
-            <div class="mySlides">
-                <img class="img-slider" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Mustang">
-            </div>
+    <h2>Carroussel manuel</h2>
+    <div class="mySlides">
+        <img class="img-slider"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png"
+            alt="Logo PHP">
+    </div>
+    <div class="mySlides">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/logo-javascript-logo-png-transparent.png"
+            alt="Logo de javascript">
+    </div>
+    <div class="mySlides">
+        <img class="img-slider" src="https://cdn.cdnlogo.com/logos/c/27/c.svg" alt="Logo de C Sharp">
+    </div>
+    <div class="mySlides">
+        <img class="img-slider"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+            alt="Mustang">
+    </div>
 
-            <a class="prev" onclick="plusSlides(-1)">◀</a>
-            <a class="next" onclick="plusSlides(1)">▶</a>
+    <a class="prev" onclick="plusSlides(-1)">◀</a>
+    <a class="next" onclick="plusSlides(1)">▶</a>
 
 
-            <!-- 9) Construisez un menu déroulant qui est caché jusqu'à ce qu'un utilisateur clique sur un bouton, à quel point il doit se dérouler et afficher une liste d'options. -->
-            <header>
-                <div class="logo">
-                    <a href="/index.html">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Logo sucré au sucre">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#a-propos">À propos</a></li>
-                        <li><a href="#recette">La recette</a></li>
-                        <li><a href="#ref">La ref</a></li>
-                        <li><a href="#createurs">Les créateurs</a></li>
-                        <li><a class="btn-commander" href="#donuts">Commander</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-burger">
-                    <div onclick="openMenu()" class="burger-button">
-                        <span class="burger-top"></span>
-                        <span class="burger-middle"></span>
-                        <span class="burger-bottom"></span>
-                    </div>
-                    <div class="burger-menu">
-                        <ul>
-                            <li><a onclick="openMenu()" href="#a-propos">À propos</a></li>
-                            <li><a onclick="openMenu()" href="#recette">La recette</a></li>
-                            <li><a onclick="openMenu()" href="#ref">La ref</a></li>
-                            <li><a onclick="openMenu()" href="#createurs">Les créateurs</a></li>
-                            <li><a onclick="openMenu()" href="#donuts">Commander</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
+    <!-- 9) Construisez un menu déroulant qui est caché jusqu'à ce qu'un utilisateur clique sur un bouton, à quel point il doit se dérouler et afficher une liste d'options. -->
+    <h2>Menu déroulant</h2>
+
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png"
+                    alt="Logo sucré au sucre">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#recette">La recette</a></li>
+                <li><a href="#ref">La ref</a></li>
+                <li><a href="#createurs">Les créateurs</a></li>
+                <li><a class="btn-commander" href="#donuts">Commander</a></li>
+            </ul>
+        </nav>
+        <div class="menu-burger">
+            <div onclick="openMenu()" class="burger-button">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+            <div class="burger-menu">
+                <ul>
+                    <li><a onclick="openMenu()" href="#a-propos">À propos</a></li>
+                    <li><a onclick="openMenu()" href="#recette">La recette</a></li>
+                    <li><a onclick="openMenu()" href="#ref">La ref</a></li>
+                    <li><a onclick="openMenu()" href="#createurs">Les créateurs</a></li>
+                    <li><a onclick="openMenu()" href="#donuts">Commander</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <script src="/evaluation-gred/exercice-dom.js"></script>
 </body>
+
 </html>

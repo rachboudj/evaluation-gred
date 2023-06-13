@@ -1,3 +1,15 @@
+const burgerButton = document.querySelector(".burger-button");
+const burgerMenu = document.querySelector(".burger-menu");
+const ancreBurger = document.querySelector(".ancre-burger");
+
+function openMenu() {
+    if (burgerButton) {
+        console.log("clique sur le btn burgeeer");
+            burgerMenu.classList.toggle("active");
+    }
+}
+
+
 // 1) Créez une page web avec plusieurs paragraphes de texte. Ajoutez des boutons qui changent la couleur de tous les paragraphes en rouge, vert ou bleu.
 const p = document.getElementsByClassName("paragraphe")
 
@@ -78,14 +90,4 @@ function showSlides2(n) {
     slides2[slideIndex2 - 1].style.display = "block";
 }
 
-// 9) 
-const burgerButton = document.querySelector(".burger-button");
-const burgerMenu = document.querySelector(".burger-menu");
-const ancreBurger = document.querySelector(".ancre-burger");
-
-function openMenu() {
-    if (burgerButton) {
-        console.log("clique sur le btn burgeeer");
-            burgerMenu.classList.toggle("active");
-    }
-}
+// 9) Construisez un menu déroulant qui est caché jusqu'à ce qu'un utilisateur clique sur un bouton, à quel point il doit se dérouler et afficher une liste d'options.
